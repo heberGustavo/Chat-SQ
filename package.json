@@ -1,0 +1,28 @@
+{
+  "name": "chat_sq",
+  "version": "1.0.0",
+  "description": "Chat interno Service Quality",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heberGustavo/Chat-SQ.git"
+  },
+  "author": "Heber Gustavo e Fernando Sales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heberGustavo/Chat-SQ/issues"
+  },
+  "homepage": "https://github.com/heberGustavo/Chat-SQ#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
