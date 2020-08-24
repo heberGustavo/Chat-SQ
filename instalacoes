@@ -1,0 +1,10 @@
+Instalações do Projeto Chat_SQ
+
+01. npm install express socket.io moment
+02. npm install -D nodemon
+03. Alterar o script 'package.json'> "scripts" > 
+	"scripts": {
+		"start": "node server",
+		"dev": "nodemon server"
+	},
+04.
