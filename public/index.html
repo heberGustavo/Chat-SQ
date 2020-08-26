@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-		<title>ChatCord App</title>
-	</head>
-	<body>
-		<div class="join-container">
-			<header class="join-header">
-				<h1><i class="fas fa-smile"></i> ChatCord</h1>
-			</header>
-			<main class="join-main">
-				<form action="chat.html">
-					<div class="form-control">
-						<label for="username">Username</label>
-						<input
-							type="text"
-							name="username"
-							id="username"
-							placeholder="Enter username..."
-							required
-						/>
-					</div>
-					<div class="form-control">
-						<label for="room">Room</label>
-						<select name="room" id="room">
-							<option value="JavaScript">JavaScript</option>
-							<option value="Python">Python</option>
-							<option value="PHP">PHP</option>
-							<option value="C#">C#</option>
-							<option value="Ruby">Ruby</option>
-							<option value="Java">Java</option>
-						</select>
-					</div>
-					<button type="submit" class="btn">Join Chat</button>
-				</form>
-			</main>
-		</div>
-	</body>
+<html lang="pt" style="overflow: hidden;">
+
+<head>
+    <title>Chat SQ | Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row" style="height: 100%;">
+        <div class="col-md-6 text-center d-flex" id="fundo-esquerda">
+            <div class="container align-self-center">
+                <h2 class="display-4">Chat SQ</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla maiores magni molestiae pariatur modi
+                    ipsa possimus quod eveniet adipisci temporibus dignissimos tempore, omnis laudantium fugiat
+                    distinctio! Cum officiis molestiae asperiores.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla maiores magni molestiae pariatur modi
+                    ipsa possimus quod eveniet adipisci temporibus dignissimos tempore, omnis laudantium fugiat
+                    distinctio! Cum officiis molestiae asperiores.</p>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex">
+            <form class="form-signin" action="dashboard.html">
+                <div class="text-center mb-3">
+                    <img class="mb-4" src="img/logo.png" alt="" width="90" height="90">
+                    <h1 class="h2 mb-0 font-weight-normal">Bem vindo ao Chat SQ</h1>
+                    <small>Estamos prontos para melhor atende-lo</small>
+                </div>
+                <input type="email" id="inputEmail" class="form-control mb-1" placeholder="E-mail" required autofocus>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox"> Cliente
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox"> Colaborador
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                <div class="text-center">
+                    <p class="mt-5 mb-3 text-muted"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>

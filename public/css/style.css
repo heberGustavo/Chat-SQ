@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/*Gerais*/
 :root {
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
@@ -14,11 +15,17 @@
 	padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	background: var(--light-color);
-	margin: 20px;
+	display: -ms-flexbox;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 ul {
@@ -32,14 +39,121 @@ a {
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
-	background: var(--light-color);
+	background: #d7daf1;
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
 }
 
-/* Chat Page */
+.sem-borda{
+	border-top: none !important;
+	border-bottom: none !important;
+	border-right: none !important;
+	border-left: none !important;
+}
 
+/*Pagina Login */
+.form-signin {
+  width: 100%;
+  max-width: 430px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#fundo-esquerda{
+	background-color: #7e7eef;
+	color: #fff;
+}
+
+/*Navbar Principal*/
+.nav-principal{
+	width: 20%;
+	height: 100%;
+	float: left;
+	display: block;
+	background-color: #f5f5f5;
+}
+
+.nav-principal ul li {
+	border-bottom: 1px solid gainsboro;
+}
+
+.nav-principal ul li:hover {
+	background-color: #e0e0e0;
+}
+
+.nav-principal ul li a{
+	padding: 14px;
+	margin-top: 2px;
+	color: #292929;
+}
+
+.fundo-sessao-titulo{
+	background-color: #b9b9b9;
+}
+
+/*Logo Usuario*/
+.user{
+	padding: 20px;
+	background-color: #cacaf4e6;
+	border-bottom: 3px solid;
+}
+.user img{
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	background-color: #95b1d8;
+}
+
+.user .nome-usuario{
+	padding: 0 10px;
+	color: #fff;
+}
+
+/*Painel Principal*/
+.painel-principal{
+	width: 80%;
+	float: left;
+}
+
+.painel-principal header{
+	border-bottom: 1px solid lightgray;
+}
+
+/**/
+.conteudo-principal{
+	background-color: #fff;
+}
+
+/* Pagina do Chat */
 .chat-container {
 	max-width: 1100px;
 	background: #fff;
