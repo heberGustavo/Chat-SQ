@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/*Gerais*/
+/***********************
+	  	 Gerais
+************************/
 :root {
 	--dark-color-a: #667aff;
 	--dark-color-b: #7386ff;
@@ -45,6 +47,18 @@ a {
 	font-size: 17px;
 }
 
+.negrito-500{
+	font-weight: 500;
+}
+
+.negrito-700{
+	font-weight: 700;
+}
+
+.negrito-900{
+	font-weight: 900;
+}
+
 .sem-borda{
 	border-top: none !important;
 	border-bottom: none !important;
@@ -52,7 +66,18 @@ a {
 	border-left: none !important;
 }
 
-/*Pagina Login */
+.fundo-linha{
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.fundo-linha:hover{
+	background-color: #f1f1f1a6;
+}
+
+/***********************
+	  Pagina Login
+************************/
 .form-signin {
   width: 100%;
   max-width: 430px;
@@ -157,7 +182,26 @@ a {
 	background-color: #fff;
 }
 
-/* Pagina do Chat */
+/***********************
+	 Pagina Acessos
+************************/
+.logo-cliente{
+	width: 80px;
+	height: 80px;
+}
+
+
+/***********************
+	Alocação Cliente
+************************/
+
+#alocacao-cliente .bootstrap-select{
+	width: 85%;
+}
+
+/***********************
+  	  Pagina do Chat 
+************************/
 .chat-container {
 	max-width: 1100px;
 	background: #fff;

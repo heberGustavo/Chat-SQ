@@ -11,7 +11,9 @@
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/uteis/bootstrap.css">
+    <link rel="stylesheet" href="css/uteis/bootstrap-select.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -66,8 +68,8 @@
                         Permissões
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="alocacao-clientes.html">
+                <li class="nav-item active">
+                    <a class="nav-link" href="alocacao-clientes.html">
                         <span data-feather="layers"></span>
                         Alocação de Clientes
                     </a>
@@ -89,8 +91,36 @@
             </div>
         </header>
         <div class="conteudo-principal">
-            <div class="container">
-                dsf
+            <div class="container" id="alocacao-cliente">
+                <div class="row fundo-linha text-center d-flex p-3">
+                    <div class="col-md-3 align-self-center">
+                        <img class="logo-cliente" src="img/logo-clientes.png" alt="Logo da empresa do Cliente">
+                    </div>
+                    <div class="col-md-3 align-self-center">
+                        <div class="row d-block">
+                            <span class="negrito-700">
+                                Empresa
+                            </span>
+                        </div>
+                        <div class="row d-block">
+                            Heineken Cervejaria
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                        <div class="row justify-content-center">
+                            <select class="selectpicker form-control" id="number" data-container="body"
+                                data-live-search="true" title="Selecione Colaborado*" data-hide-disabled="true">
+                                <option>Rafael</option>
+                                <option>Suzana</option>
+                                <option>Fernando</option></select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 align-self-center">
+                        <div class="row d-block">
+                            <button class="btn btn-outline-primary btn-sm">Alocar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -98,11 +128,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="dashboard.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/uteis/bootstrap-select.js"></script>
+
 </body>
 
 </html>
