@@ -110,6 +110,10 @@ a {
 	background-color: #e0e0e0;
 }
 
+.nav-principal ul .active {
+	background-color:#e0e0e0;
+}
+
 .nav-principal ul li a{
 	padding: 14px;
 	margin-top: 2px;
