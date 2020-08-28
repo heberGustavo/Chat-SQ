@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>Chat SQ | Clientes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/uteis/bootstrap.css">
+    <link rel="stylesheet" href="../../css/uteis/bootstrap-select.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar flex-md-nowrap p-0 shadow nav-principal">
+        <div class="sidebar-sticky">
+            <div class="user">
+                <img src="../../img/user.png" class="img-fluid" alt="foto de perfil">
+                <span class="nome-usuario">João Kleber</span>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../dashboard/dashboard.html">
+                        <span data-feather="home"></span>
+                        Dashboard <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../acesso/acessos.html">
+                        <span data-feather="file"></span>
+                        Acessos
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../clientes/clientes.html">
+                        <span data-feather="shopping-cart"></span>
+                        Clientes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../usuarios/usuarios.html">
+                        <span data-feather="users"></span>
+                        Usuários
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../historicoAtendimento/historico-atendimentos.html">
+                        <span data-feather="bar-chart-2"></span>
+                        Histórico de Atendimento
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../relatorios/relatorios.html">
+                        <span data-feather="layers"></span>
+                        Relatórios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../permissoes/permissoes.html">
+                        <span data-feather="layers"></span>
+                        Permissões
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../alocacaoCliente/alocacao-clientes.html">
+                        <span data-feather="layers"></span>
+                        Alocação de Clientes
+                    </a>
+                </li>
+                <li class="nav-item sem-borda">
+                    <a class="nav-link" href="../../index.html">
+                        <span data-feather="layers"></span>
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="painel-principal">
+        <header class="fundo-sessao-titulo">
+            <div class="container pt-3 pb-2">
+                <h1 class="h4">Clientes</h1>
+            </div>
+        </header>
+        <div class="conteudo-principal" id="listaClientes">
+            <div class="container">
+                <button class="btn btn-primary">
+                    <a href="cliente-criar.html" class="text-light">Cadastrar Cliente</a>
+                </button>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Cod</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Organização</th>
+                        <th scope="col">Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Google</td>
+                        <td>Otto</td>
+                        <td>google@mdo.com</td>
+                        <td>Ápice</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Iphone</td>
+                        <td>Otto</td>
+                        <td>iphone@mdo.com</td>
+                        <td>Ápice</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="../../js/uteis/bootstrap.js"></script>
+    
+</body>
+
+</html>

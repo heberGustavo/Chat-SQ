@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>Chat SQ | Novo Cliente</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../css/uteis/bootstrap.css">
+    <link rel="stylesheet" href="../../css/uteis/bootstrap-select.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar flex-md-nowrap p-0 shadow nav-principal">
+        <div class="sidebar-sticky">
+            <div class="user">
+                <img src="../../img/user.png" class="img-fluid" alt="foto de perfil">
+                <span class="nome-usuario">João Kleber</span>
+            </div>
+
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../dashboard/dashboard.html">
+                        <span data-feather="home"></span>
+                        Dashboard <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../acesso/acessos.html">
+                        <span data-feather="file"></span>
+                        Acessos
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../clientes/clientes.html">
+                        <span data-feather="shopping-cart"></span>
+                        Clientes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../usuarios/usuarios.html">
+                        <span data-feather="users"></span>
+                        Usuários
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../historicoAtendimento/historico-atendimentos.html">
+                        <span data-feather="bar-chart-2"></span>
+                        Histórico de Atendimento
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../relatorios/relatorios.html">
+                        <span data-feather="layers"></span>
+                        Relatórios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../permissoes/permissoes.html">
+                        <span data-feather="layers"></span>
+                        Permissões
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../alocacaoCliente/alocacao-clientes.html">
+                        <span data-feather="layers"></span>
+                        Alocação de Clientes
+                    </a>
+                </li>
+                <li class="nav-item sem-borda">
+                    <a class="nav-link" href="../../index.html">
+                        <span data-feather="layers"></span>
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="painel-principal">
+        <header class="fundo-sessao-titulo">
+            <div class="container pt-3 pb-2">
+                <h1 class="h4">Clientes</h1>
+            </div>
+        </header>
+        <div class="conteudo-principal">
+            <div class="container">
+                <div class="info-entrada">
+                    <h2>Informações de Entrada</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="codigo">Código</label>
+                                <input type="text" class="form-control" id="codigo" placeholder="0001">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Maria da Silva">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="@exemplo.com">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="senha" placeholder="********">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-empresa">
+                    <h2>Informações da Empresa</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="razao-social">Razão Social</label>
+                                <input type="text" class="form-control" id="razao-social" placeholder="Exemplo LTDA">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="cpf-cnpj">CPF/CNPJ</label>
+                                <input type="text" class="form-control" id="cpf-cnpj" placeholder="00.000.000/0001-00">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nome-link">Nome Link</label>
+                                <input type="text" class="form-control" id="nome-link" placeholder="Google">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="link-externo">Link Externo</label>
+                                <input type="text" class="form-control" id="link-externo" placeholder="https://google.com.br">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="link-externo">Status</label>
+                                <select class="selectpicker form-control" id="number" title="Selecione*">
+                                    <option>Ativo</option>
+                                    <option>Desativo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="link-externo">Organização</label>
+                                <select class="selectpicker form-control" id="number" title="Selecione*">
+                                    <option>Ápice</option>
+                                    <option>Service Quality</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="../../js/uteis/bootstrap.js"></script>
+</body>
+
+</html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Chat SQ | Acessos</title>
+    <title>Chat SQ | Histórico de Atendimento</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,69 +11,71 @@
         integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/uteis/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/uteis/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
 </head>
 
 <body>
     <nav class="navbar flex-md-nowrap p-0 shadow nav-principal">
         <div class="sidebar-sticky">
             <div class="user">
-                <img src="img/user.png" class="img-fluid" alt="foto de perfil">
+                <img src="../../img/user.png" class="img-fluid" alt="foto de perfil">
                 <span class="nome-usuario">João Kleber</span>
             </div>
 
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="dashboard.html">
+                    <a class="nav-link" href="../dashboard/dashboard.html">
                         <span data-feather="home"></span>
                         Dashboard <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="acessos.html">
+                <li class="nav-item">
+                    <a class="nav-link" href="../acesso/acessos.html">
                         <span data-feather="file"></span>
                         Acessos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clientes.html">
+                    <a class="nav-link" href="../clientes/clientes.html">
                         <span data-feather="shopping-cart"></span>
                         Clientes
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="usuarios.html">
+                    <a class="nav-link" href="../usuarios/usuarios.html">
                         <span data-feather="users"></span>
                         Usuários
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="historico-atendimentos.html">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../historicoAtendimento/historico-atendimentos.html">
                         <span data-feather="bar-chart-2"></span>
                         Histórico de Atendimento
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="relatorios.html">
+                    <a class="nav-link" href="../relatorios/relatorios.html">
                         <span data-feather="layers"></span>
                         Relatórios
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="permissoes.html">
+                    <a class="nav-link" href="../permissoes/permissoes.html">
                         <span data-feather="layers"></span>
                         Permissões
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alocacao-clientes.html">
+                    <a class="nav-link" href="../alocacaoCliente/alocacao-clientes.html">
                         <span data-feather="layers"></span>
                         Alocação de Clientes
                     </a>
                 </li>
                 <li class="nav-item sem-borda">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="../../index.html">
                         <span data-feather="layers"></span>
                         Sair
                     </a>
@@ -85,16 +87,16 @@
     <div class="painel-principal">
         <header class="fundo-sessao-titulo">
             <div class="container pt-3 pb-2">
-                <h1 class="h4">Em Atendimento</h1>
+                <h1 class="h4">Histórico de Atendimento</h1>
             </div>
         </header>
-        <div class="conteudo-principal">
+        <div class="conteudo-principal p-0">
             <div class="container">
                 <div class="row fundo-linha text-center d-flex p-3">
                     <div class="col-md-2 align-self-center">
-                        <img class="logo-cliente" src="img/logo-clientes.png" alt="Logo da empresa do Cliente">
+                        <img class="logo-cliente" src="../../img/logo-clientes.png" alt="Logo da empresa do Cliente">
                     </div>
-                    <div class="col-md-3 align-self-center">
+                    <div class="col-md-2 align-self-center">
                         <div class="row d-block">
                             <span class="negrito-700">
                                 Empresa
@@ -104,14 +106,14 @@
                             Heineken Cervejaria
                         </div>
                     </div>
-                    <div class="col-md-3 align-self-center">                        
+                    <div class="col-md-2 align-self-center">
                         <div class="row d-block">
                             <span class="negrito-700">
                                 Início do Atendimento
                             </span>
                         </div>
                         <div class="row d-block">
-                            12:00
+                            <text>12:00</text> - <text>18:00</text>
                         </div>
                     </div>
                     <div class="col-md-2 align-self-center">
@@ -121,7 +123,7 @@
                             </span>
                         </div>
                         <div class="row d-block">
-                            <i class="fas fa-circle text-success"></i>
+                            <i class="fas fa-circle text-danger"></i>
                         </div>
                     </div>
                     <div class="col-md-2 align-self-center">
@@ -134,8 +136,12 @@
                             Leonardo Lobo
                         </div>
                     </div>
+                    <div class="col-md-2 align-self-center">
+                        <div class="row d-block">
+                            <button class="btn btn-outline-primary btn-sm">Detalhes</button>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -143,6 +149,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="js/uteis/bootstrap.js"></script>
 </body>
 
 </html>
